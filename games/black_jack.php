@@ -6,8 +6,8 @@
    <title>Black Jack</title>
    <script type="text/javascript">
 
-   function getReport(){
-
+   function deckShuffler(){
+      
    } 
 
    </script>
