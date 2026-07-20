@@ -11,7 +11,7 @@
     } 
 
     </script>
-    <a class="abutton" style="text-decoration: none;" href="../index.php">Go Back to Hub</a>
+    <a class="abutton" style="text-decoration: none;" href="../js_games.php">Go Back to Hub</a>
 </head>
 <body>     
     <fieldset style="margin:auto;width:90%;margin-bottom:10px;">
