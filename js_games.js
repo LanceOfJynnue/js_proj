@@ -6,6 +6,19 @@ async function getData() {
     .select('*')
     
   if (error) console.error(error)
-  console.log('Retrieved data:', data)
+
+  // Clear the "Loading..." text
+  container.innerHTML = '';
+
+  // Loop through your data array and create HTML elements
+  data.forEach(item => {
+    const listItem = document.createElement('li');
+    
+    // Replace 'title' with an actual column name from your table
+    listItem.textContent = item.title || JSON.stringify(item); 
+    
+    container.appendChild(listItem);
+  });
+  
   return data
 }
