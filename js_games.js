@@ -6,5 +6,6 @@ async function getData() {
     .select('*')
     
   if (error) console.error(error)
+  console.log('Retrieved data:', data)
   return data
 }
