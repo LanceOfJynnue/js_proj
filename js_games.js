@@ -44,7 +44,8 @@ async function fetchAndDisplayData() {
       const listItem = document.createElement('li');
       
       // Replace 'title' with an actual column name from your table
-      listItem.textContent = item.title || JSON.stringify(item); 
+      listItem.textContent = item.suit || JSON.stringify(item);
+      listItem.textContent = item.card_value || JSON.stringify(item);  
       
       container.appendChild(listItem);
     });
