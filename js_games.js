@@ -4,8 +4,8 @@ const button = document.getElementById('action-btn');
 // Call the function when the page loads
 document.addEventListener('DOMContentLoaded', getData);
 
-const SUPABASE_URL = 'https://wphnnfrjvmczpggrknay.supabase.co/rest/v1/';
-const SUPABASE_ANON_KEY = 'sb_publishable_zwSiHqLvzwa3ssztWbsJ9Q_gK-IYCkZ';
+const SUPABASE_URL = 'https://orryghximzoceldnymhu.supabase.co';
+const SUPABASE_ANON_KEY = 'sb_publishable_USyHeotY9Fn1jAaRDx3nuQ_Ik5nRE28';
 
 const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
