@@ -11,7 +11,7 @@ const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 async function getData() {
   const { data, error } = await supabase
-    .from('user_table')
+    .from('test')
     .select('*');
 
   if (error) {
