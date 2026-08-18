@@ -1,6 +1,6 @@
 // Replace these with your actual Supabase project values
-const SUPABASE_URL = 'https://orryghximzoceldnymhu.supabase.co/rest/v1/';
-const SUPABASE_ANON_KEY = 'sb_publishable_USyHeotY9Fn1jAaRDx3nuQ_Ik5nRE28';
+const SUPABASE_URL = 'https://wphnnfrjvmczpggrknay.supabase.co/rest/v1/';
+const SUPABASE_ANON_KEY = 'sb_publishable_zwSiHqLvzwa3ssztWbsJ9Q_gK-IYCkZ';
 
 // The CDN automatically exposes 'supabase' globally
 const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
@@ -8,7 +8,7 @@ const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 // Example: Fetch data from a table named 'todos'
 async function getData() {
   const { data, error } = await supabase
-    .from('todos')
+    .from('user_table')
     .select('*');
 
   if (error) {
