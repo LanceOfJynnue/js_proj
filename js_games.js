@@ -29,8 +29,14 @@ button.addEventListener('click', () => {
     
     alert("You successfully manipulated the HTML with JavaScript!");
 });
+
+window.location.replace("games/rps.html");
 */
 
 button.addEventListener('click', () => {
-    window.location.replace("games/rps.html");
+    heading.textContent = "Test";
+    
+    heading.style.color = "#28a745";
+    
+    alert("Just a test.");
 });
