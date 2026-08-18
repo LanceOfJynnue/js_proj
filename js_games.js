@@ -24,9 +24,5 @@ async function getData() {
 */
 
 button.addEventListener('click', () => {
-    heading.textContent = "JavaScript is Working!";
-    
-    heading.style.color = "#28a745";
-    
-    alert("You successfully manipulated the HTML with JavaScript!");
+  window.location.href = "games/rps.html";
 });
