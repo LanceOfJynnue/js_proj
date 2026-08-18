@@ -16,6 +16,7 @@ async function getData() {
     return;
   }
   console.log('Your data:', data);
+  alert('Your data:', data);
 }
 
 // Call the function when the page loads
