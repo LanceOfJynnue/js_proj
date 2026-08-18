@@ -9,15 +9,6 @@ const SUPABASE_ANON_KEY = 'sb_publishable_zwSiHqLvzwa3ssztWbsJ9Q_gK-IYCkZ';
 
 const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
-button.addEventListener('click', () => {
-    heading.textContent = "JavaScript is Working!";
-    
-    heading.style.color = "#28a745";
-    
-    alert("You successfully manipulated the HTML with JavaScript!");
-});
-
-
 async function getData() {
   const { data, error } = await supabase
     .from('user_table')
@@ -30,3 +21,11 @@ async function getData() {
   console.log('Your data:', data);
   alert('Your data:', data);
 }
+
+button.addEventListener('click', () => {
+    heading.textContent = "JavaScript is Working!";
+    
+    heading.style.color = "#28a745";
+    
+    alert("You successfully manipulated the HTML with JavaScript!");
+});
