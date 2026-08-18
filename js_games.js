@@ -19,7 +19,7 @@ button.addEventListener('click', () => {
     alert("You successfully manipulated the HTML with JavaScript!");
 });
 
-// Example: Fetch data from a table named 'todos'
+/*
 async function getData() {
   const { data, error } = await supabase
     .from('user_table')
@@ -32,3 +32,4 @@ async function getData() {
   console.log('Your data:', data);
   alert('Your data:', data);
 }
+*/
