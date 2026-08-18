@@ -32,5 +32,5 @@ button.addEventListener('click', () => {
 */
 
 button.addEventListener('click', () => {
-    window.location.replace("games/rps.html")
+    window.location.replace("games/rps.html");
 });
