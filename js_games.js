@@ -21,8 +21,16 @@ async function getData() {
   console.log('Your data:', data);
   alert('Your data:', data);
 }
+
+button.addEventListener('click', () => {
+    heading.textContent = "JavaScript is Working!";
+    
+    heading.style.color = "#28a745";
+    
+    alert("You successfully manipulated the HTML with JavaScript!");
+});
 */
 
 button.addEventListener('click', () => {
-  window.location.href = "games/rps.html";
+    window.location.replace("games/rps.html")
 });
