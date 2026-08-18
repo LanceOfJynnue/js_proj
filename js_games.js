@@ -1,13 +1,13 @@
-// Call the function when the page loads
-document.addEventListener('DOMContentLoaded', getTodos);
-
 const heading = document.getElementById('main-heading');
 const button = document.getElementById('action-btn');
 
-// const SUPABASE_URL = 'https://wphnnfrjvmczpggrknay.supabase.co/rest/v1/';
-// const SUPABASE_ANON_KEY = 'sb_publishable_zwSiHqLvzwa3ssztWbsJ9Q_gK-IYCkZ';
+// Call the function when the page loads
+document.addEventListener('DOMContentLoaded', getData);
 
-// const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+const SUPABASE_URL = 'https://wphnnfrjvmczpggrknay.supabase.co/rest/v1/';
+const SUPABASE_ANON_KEY = 'sb_publishable_zwSiHqLvzwa3ssztWbsJ9Q_gK-IYCkZ';
+
+const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 button.addEventListener('click', () => {
     heading.textContent = "JavaScript is Working!";
@@ -17,7 +17,7 @@ button.addEventListener('click', () => {
     alert("You successfully manipulated the HTML with JavaScript!");
 });
 
-/*
+
 async function getData() {
   const { data, error } = await supabase
     .from('user_table')
@@ -30,4 +30,3 @@ async function getData() {
   console.log('Your data:', data);
   alert('Your data:', data);
 }
-*/
