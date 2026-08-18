@@ -16,16 +16,7 @@ button.addEventListener('click', () => {
     
     heading.style.color = "#28a745";
     
-    const { data, error } = await supabase
-    .from('user_table')
-    .select('*');
-
-    if (error) {
-      console.error('Error fetching data:', error.message);
-      return;
-    }
-    console.log('Your data:', data);
-    alert('Your data:', data);
+    alert("You successfully manipulated the HTML with JavaScript!");
 });
 
 // Example: Fetch data from a table named 'todos'
